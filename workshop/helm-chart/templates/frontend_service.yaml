@@ -4,6 +4,7 @@ metadata:
   name: {{ .Values.frontend.name }}
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+    service.beta.kubernetes.io/load-balancer-source-ranges: 15.248.4.0/24
   namespace: {{ .Values.frontend.namespace }}
   labels:
     app: {{ .Values.frontend.name }}
