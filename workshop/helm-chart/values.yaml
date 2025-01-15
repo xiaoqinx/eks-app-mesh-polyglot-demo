@@ -97,7 +97,7 @@ catalog:
   name: prodcatalog
 
   image:
-    repository: public.ecr.aws/u2g6w7p2/eks-workshop-demo/product_catalog
+    repository: 402278545963.dkr.ecr.ap-southeast-2.amazonaws.com/eks-app-mesh-demo/product_catalog
     tag: "10.0"
     pullPolicy: Always
 
