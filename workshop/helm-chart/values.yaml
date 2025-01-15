@@ -157,11 +157,11 @@ catalog:
       value: xray-service.default:2000
     - name: DATABASE_SERVICE_URL
       value: mysql.workshop
-    - name: MYSQL_ROOT_PASSWORD
-      valueFrom:
-        secretKeyRef:
-          name: mysql-secret
-          key: password      
+    #- name: MYSQL_ROOT_PASSWORD
+    #  valueFrom:
+    #    secretKeyRef:
+    #      name: mysql-secret
+    #      key: password      
   resources: {}
     # We usually recommend not to specify default resources and to leave this as a conscious
     # choice for the user. This also increases chances charts run on environments with little
